@@ -1,0 +1,10 @@
+; atl_dll.def : Declares the module parameters.
+
+LIBRARY      "atl_dll.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

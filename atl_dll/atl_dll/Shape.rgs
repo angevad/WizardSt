@@ -1,0 +1,26 @@
+HKCR
+{
+	atl_dll.Shape.1 = s 'Shape Class'
+	{
+		CLSID = s '{C075FFC0-AD98-4B01-A8F1-59281ACD0711}'
+	}
+	atl_dll.Shape = s 'Shape Class'
+	{
+		CLSID = s '{C075FFC0-AD98-4B01-A8F1-59281ACD0711}'
+		CurVer = s 'atl_dll.Shape.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C075FFC0-AD98-4B01-A8F1-59281ACD0711} = s 'Shape Class'
+		{
+			ProgID = s 'atl_dll.Shape.1'
+			VersionIndependentProgID = s 'atl_dll.Shape'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			'TypeLib' = s '{E87B1BBC-63DB-472A-81E5-622260CF3394}'
+		}
+	}
+}
